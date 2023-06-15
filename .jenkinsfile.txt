@@ -16,7 +16,7 @@ stage('Testing')
 {
 steps
 {
-bat "mvn test -perror"
+bat "mvn test"
 }
 }
 
