@@ -27,6 +27,7 @@ public class Alert {
 		driver.switchTo().alert().accept();
 		driver.findElement(By.name("enter-name")).sendKeys(name);
 		driver.findElement(By.id("confirmbtn")).click();
+		System.out.println("Get the text of alert");
 		System.out.println(driver.switchTo().alert().getText());
 		driver.switchTo().alert().dismiss();
 
