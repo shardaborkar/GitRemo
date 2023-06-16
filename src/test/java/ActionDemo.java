@@ -24,7 +24,8 @@ public class ActionDemo {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\Admin\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		System.out.println("changes done");
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com/");
 		Actions a=new Actions(driver);
