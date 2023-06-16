@@ -32,4 +32,5 @@ public class Fluentwait {
 	
 	}});
 System.out.println(driver.findElement(By.cssSelector("[id='finish'] h4")).getText());
+System.out.println("Fluent");
 }}
